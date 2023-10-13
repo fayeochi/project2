@@ -22,4 +22,7 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    function goToPage() {
+        location.href = "forum.html";
+    }
 });
