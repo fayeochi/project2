@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link href="#" rel="stylesheet">
+
+    <!-- insert javascipt/jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-..."
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark shadow mb-5 sticky-lg-top" id="mainNav">
+        <div class="container px-4">
+            <a class="navbar-brand" href="#page-top">Purdue Housing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse content-center" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#forum">Forum & Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li><button type="button" class="btn btn-primary">Log in</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- FORUM PART -->
+    <section id="forum" class="mb-5">
+
+        <div class="container-fluid col-lg-6">
+            <div class="form-outline row justify-content-center">
+                <form class="d-flex me-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success col-md-2" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- OVERVIEW OF FORUM -->
+        <div class="container justify-content-center mt-5 text-center">
+            <div class="row mb-2">
+                <h1>TITLE</h1>
+            </div>
+            <div class="row mb-2">
+                <h4> Overall Score</h4>
+            </div>
+            <div class="row mb-2">
+                <h2> 4.1/5.0</h2>
+                <div class="col">
+                    <span><img src="img/star.png" alt="star" width="30"></span>
+                    <span><img src="img/star.png" alt="star" width="30"></span>
+                    <span><img src="img/star.png" alt="star" width="30"></span>
+                    <span><img src="img/star.png" alt="star" width="30"></span>
+                    <span><img src="img/star.png" alt="star" width="30"></span>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <div class="col me-auto mb-5 rounded-0">
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- LEFT COLUMN - QUESTION LIST -->
+        <div class="row justify-content-center mt-5 mx-auto column-gap-3">
+            <div class="col-lg-7 bg-warning p-4">
+                <div class="row">
+                    <div
+                        class="card row-hover pos-relative py-3 px-3 mb-3 border-warning border-top-0 border-right-0 border-bottom-0 rounded-0 shadow">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 mb-3 mb-sm-0">
+                                <h6>
+                                    <span><img src="img/user.png" alt="star" width="30"></span>
+                                    Name Aaaaa Bbbbb <span class="badge badge-secondary bg-dark">Verified
+                                        Student</span>
+                                </h6>
+                                <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20
+                                        minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">KenyeW</a></p>
+
+                                <div class="text-sm op-5 card-text bg-light" style="transform: rotate(0);">
+                                    <h6> <a href="#" class="text-warning stretched-link"> Post title </a>
+                                    </h6>
+                                    <p> Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini.Lorem ipsum dolor
+                                        sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 op-7">
+                            <div class="row text-center op-7">
+                                <div class="col px-1"> <i class="ion-connection-bars icon-1x"></i> <span
+                                        class="d-block text-sm">141 Votes</span> </div>
+                                <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span
+                                        class="d-block text-sm">122 Replys</span> </div>
+                                <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span
+                                        class="d-block text-sm">290 Views</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div
+                        class="card row-hover pos-relative py-3 px-3 mb-3 border-warning border-top-0 border-right-0 border-bottom-0 rounded-0 shadow">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 mb-3 mb-sm-0">
+                                <h6>
+                                    <span><img src="img/user.png" alt="star" width="30"></span>
+                                    Name Aaaaa Bbbbb <span class="badge badge-secondary bg-dark">Verified
+                                        Student</span>
+                                </h6>
+
+                                <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20
+                                        minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">KenyeW</a></p>
+
+                                <div class="text-sm op-5 card-text bg-light" style="transform: rotate(0);">
+                                    <h6> <a href="#" class="text-warning stretched-link"> Post title </a>
+                                    </h6>
+                                    <p> Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini.Lorem ipsum dolor
+                                        sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 op-7">
+                            <div class="row text-center op-7">
+                                <div class="col px-1"> <i class="ion-connection-bars icon-1x"></i> <span
+                                        class="d-block text-sm">141 Votes</span> </div>
+                                <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span
+                                        class="d-block text-sm">122 Replys</span> </div>
+                                <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span
+                                        class="d-block text-sm">290 Views</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="card row-hover pos-relative py-3 px-3 mb-3 border-warning border-top-0 border-right-0 border-bottom-0 rounded-0 shadow">
+                        <div class="row align-items-center">
+                            <div class="col-md-12 mb-3 mb-sm-0">
+                                <h6>
+                                    <span><img src="img/user.png" alt="star" width="30"></span>
+                                    Name Aaaaa Bbbbb <span class="badge badge-secondary bg-dark">Verified
+                                        Student</span>
+                                </h6>
+                                <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20
+                                        minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">KenyeW</a></p>
+
+                                <div class="text-sm op-5 card-text bg-light" style="transform: rotate(0);">
+                                    <h6> <a href="#" class="text-warning stretched-link"> Post title </a>
+                                    </h6>
+                                    <p> Lorem ipsum dolor sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini.Lorem ipsum dolor
+                                        sit
+                                        amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4 op-7">
+                            <div class="row text-center op-7">
+                                <div class="col px-1"> <i class="ion-connection-bars icon-1x"></i> <span
+                                        class="d-block text-sm">141 Votes</span> </div>
+                                <div class="col px-1"> <i class="ion-ios-chatboxes-outline icon-1x"></i> <span
+                                        class="d-block text-sm">122 Replys</span> </div>
+                                <div class="col px-1"> <i class="ion-ios-eye-outline icon-1x"></i> <span
+                                        class="d-block text-sm">290 Views</span> </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class=" row justify-content-center p-2">
+                    <button type="button" class="btn btn-primary">View More</button>
+                </div>
+
+            </div>
+
+            <!-- <div class="col-lg-3 bg-secondary-subtle">
+                <div class="row">
+                    <h3>AMC 2</h3>
+                </div>
+                <div class="row">
+                    <h3>AMC 2</h3>
+                </div>
+            </div> -->
+
+
+            <!-- RIGHT COLUMN - ACTIVE TOPICS -->
+            <div class="col-lg-3 mb-4 mb-lg-0 px-lg-0 mt-lg-0">
+                <div
+                    style="visibility: hidden; display: none; width: 285px; height: 801px; margin: 0px; float: none; position: static; inset: 85px auto auto;">
+                </div>
+                <div data-settings="{&quot;parent&quot;:&quot;#content&quot;,&quot;mind&quot;:&quot;#header&quot;,&quot;top&quot;:10,&quot;breakpoint&quot;:992}"
+                    data-toggle="sticky" class="sticky" style="top: 85px;">
+                    <div class="sticky-inner">
+                        <div class="bg-white mb-3">
+                            <h4 class="px-3 py-4 op-5 m-0">
+                                Active Topics
+                            </h4>
+                            <hr class="m-0">
+                            <div class="pos-relative px-3 py-3">
+                                <h6 class="text-primary text-sm">
+                                    <a href="#" class="text-primary">Why Bootstrap 4 is so awesome? </a>
+                                </h6>
+                                <p class="mb-0 text-sm"><span class="op-6">Posted</span> <a class="text-black"
+                                        href="#">39 minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">AppStrapMaster</a></p>
+                            </div>
+                            <hr class="m-0">
+                            <div class="pos-relative px-3 py-3">
+                                <h6 class="text-primary text-sm">
+                                    <a href="#" class="text-primary">Custom shortcut or command to launch command in
+                                        terminal? </a>
+                                </h6>
+                                <p class="mb-0 text-sm"><span class="op-6">Posted</span> <a class="text-black"
+                                        href="#">58 minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">DanielD</a></p>
+                            </div>
+                            <hr class="m-0">
+                            <div class="pos-relative px-3 py-3">
+                                <h6 class="text-primary text-sm">
+                                    <a href="#" class="text-primary">HELP! My Windows XP machine is down </a>
+                                </h6>
+                                <p class="mb-0 text-sm"><span class="op-6">Posted</span> <a class="text-black"
+                                        href="#">48 minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">DanielD</a></p>
+                            </div>
+                            <hr class="m-0">
+                            <div class="pos-relative px-3 py-3">
+                                <h6 class="text-primary text-sm">
+                                    <a href="#" class="text-primary">HELP! My Windows XP machine is down </a>
+                                </h6>
+                                <p class="mb-0 text-sm"><span class="op-6">Posted</span> <a class="text-black"
+                                        href="#">38 minutes</a> <span class="op-6">ago by</span> <a class="text-black"
+                                        href="#">DanielD</a></p>
+                            </div>
+                            <hr class="m-0">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- REVIEW -->
+    <section id="review" class="mb-5 mt-5">
+        <!-- cards -->
+        <div class="container-fluid col-lg-10 mb-5  bg-secondary-subtle">
+            <div class="row justify-content-center">
+                <!-- REVIEW CARD 1 -->
+                <div class="card me-2 col-lg-4 p-2">
+                    <!-- <img class="card-img-top mt-2" src="img/mission.png" height="200" width="auto" alt="Card image cap"> -->
+
+                    <div class="col-md-12 mb-3 mb-sm-0 p-2">
+                        <h6>
+                            <span><img src="img/user.png" alt="star" width="30"></span>
+                            Name Aaaaa Bbbbb <span class="badge badge-secondary bg-dark">Verified
+                                Student</span>
+                        </h6>
+                        <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20
+                                minutes</a> <span class="op-6">ago by</span> <a class="text-black" href="#">KenyeW</a>
+                        </p>
+
+                        <div class="row mb-2">
+                            <h6> 4.1/5.0</h6>
+                            <div class="col">
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                            </div>
+                        </div>
+                        <div class="text-sm op-5 card-text bg-light" style="transform: rotate(0);">
+                            <h6> <a href="#" class="text-warning stretched-link"> Post title </a>
+                            </h6>
+                            <p> Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad mini.Lorem ipsum dolor
+                                sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo Carousel 2 -->
+                    <div id="carouselExampleIndicators" class="carousel slide p-2">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/house.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/house2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/house3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- REVIEW CARD 2 -->
+                <div class="card me-2 col-lg-4 p-2">
+                    <div class="col-md-12 mb-3 mb-sm-0 p-2">
+                        <h6>
+                            <span><img src="img/user.png" alt="star" width="30"></span>
+                            Name Aaaaa Bbbbb <span class="badge badge-secondary bg-dark">Verified
+                                Student</span>
+                        </h6>
+                        <p class="text-sm"><span class="op-6">Posted</span> <a class="text-black" href="#">20
+                                minutes</a> <span class="op-6">ago by</span> <a class="text-black" href="#">KenyeW</a>
+                        </p>
+
+                        <div class="row mb-2">
+                            <h6> 4.1/5.0</h6>
+                            <div class="col">
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                                <span><img src="img/star.png" alt="star" width="15"></span>
+                            </div>
+                        </div>
+
+                        <div class="text-sm op-5 card-text bg-light" style="transform: rotate(0);">
+                            <h6> <a href="#" class="text-warning stretched-link"> Post title </a>
+                            </h6>
+                            <p> Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad mini.Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad mini.</p>
+                        </div>
+                    </div>
+
+                    <!-- Photo Carousel 2 -->
+                    <!-- Photo Carousel for the second card -->
+                    <div id="carouselExampleIndicators2" class="carousel slide p-2">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/house.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/house2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/house3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" ariahidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
