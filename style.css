@@ -1,0 +1,301 @@
+:root {
+  --primary-color: rgb(217, 172, 48);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+
+/* Global Stylings */
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  color:#666;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+
+.width-50 {
+  width: 100%;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Progressbar */
+.progressbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  counter-reset: step;
+  margin: 2rem 0 4rem;
+}
+
+.progressbar::before,
+.progress {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  background-color: #dcdcdc;
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: 0.3s;
+  text-decoration: none;
+
+}
+
+.progress-step {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  background-color: #dcdcdc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+}
+
+.progress-step::before {
+  counter-increment: step;
+  content: counter(step);
+  text-decoration: none;
+  color:black;
+}
+
+.progress-step::after {
+  content: attr(data-title);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  font-size: 0.85rem;
+  color: #666;
+  text-decoration: none;
+  color:white;
+}
+
+.progress-step-active {
+  background-color: var(--primary-color);
+  color: #f3f3f3;
+  text-decoration: none;
+}
+
+/* Form */
+.form {
+  /* width: clamp(320px, 30%, 430px); */
+  margin: 0.35rem auto;
+  border: 1px solid #ccc;
+  border-radius: 0.35rem;
+  padding: 1.5rem;
+}
+
+.form-step {
+  display: none;
+  transform-origin: top;
+  animation: animate 0.5s;
+}
+
+.form-step-active {
+  display: block;
+}
+
+.input-group {
+  margin: 2rem 0;
+}
+
+.form-outline {
+  width: fit-content;
+}
+
+.form-control {
+  width: 12rem;
+  border-radius: 100px;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+/* Button */
+.btns-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.50rem;
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  border-color:transparent;
+}
+
+/*Fix primary button colors */
+.btn btn-primary {
+  outline:none;
+  background-color: transparent;
+  color: black;
+  border-radius:10px;
+}
+
+.btn-primary:hover {
+  color:white;
+  background-color:rgb(241, 209, 119);
+}
+
+.btn-outline-success {
+  background-color: #333;
+  outline:none;
+}
+
+
+.btn outline-dark {
+  color:#333;
+  outline:none;
+  transition: 2ms;
+}
+
+.btn outline-dark:hover {
+  background-color: rgb(240, 198, 83);
+  transform: scale(1.05);
+}
+
+.btn-outline-secondary {
+  color:black;
+  background-color: rgb(221, 221, 221);;  
+  outline-color:rgb(240, 198, 83);
+}
+
+.btn-outline-dark {
+  outline:none;
+}
+
+/* .tags-group {
+  align-items: start;
+} */
+
+.tags {
+  background-color: #ffffff;
+  color: var(--primary-color);
+  outline:solid;
+  outline-color: var(--primary-color);
+  margin:5px;
+}
+
+.tags:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.btn :hover {
+ /** box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);**/
+  background-color: var(--primary-color);
+}
+
+.search-btn {
+  width: 3rem;
+}
+
+
+/* Accordion styling
+*/
+
+.accordion-item {
+  background-color: rgb(246, 238, 218);
+}
+
+/*Fix navbar btn color */
+nav .btn-primary {
+  color:white;
+  border-color:var(--primary-color);
+}
+nav .btn-primary:active {
+  background-color: var(--primary-color);
+}
+nav .btn-outline-success {
+  outline:var(--primary-color);
+  background-color:transparent;
+}
+
+
+
+/*duo login button*/
+.mb-4 btn-outline-success {
+  outline:#333;
+  background-color: white;
+  color:black;
+}
+.btn-outline-success:hover {
+  background-color: var(--primary-color);
+  color:white;
+}
+.btn-outline-warning:hover {
+  background-color: var(--primary-color);
+  color:white;
+}
+/*acceptance letter upload*/
+.mb-4 btn-outline-warning {
+  background-color: white;
+  outline:#333;
+  color:black;
+}
+
+
+.text-gold {
+  color:var(--primary-color);
+  font-style:bold;
+}
+
+/* Cards */
+
+.text-sm {
+  color:#666;
+}
