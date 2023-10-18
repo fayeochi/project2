@@ -1,0 +1,36 @@
+.hidden-page {
+    display:none;
+}
+h2 {
+    padding-bottom:20px;
+}
+h1 {
+    padding-top:50px;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+.container {
+    justify-content:center;
+    width:80%;
+}
+
+.card {
+    justify-content:end;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+.btn {
+    transition: all .4s ease-in-out;
+}
+
+.card {
+    margin:auto;
+}
+
+#forum {
+    padding-top:100px;
+    padding-bottom:100px;
+}
