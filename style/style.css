@@ -9,17 +9,21 @@
 }
 
 body {
-  font-family: Montserrat, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   display: grid;
   place-items: center;
   min-height: 100vh;
 }
 
+
 /* Global Stylings */
 label {
   display: block;
   margin-bottom: 0.5rem;
+}
+
+h4 {
+  color:#666;
 }
 
 input {
@@ -67,6 +71,8 @@ input {
   background-color: var(--primary-color);
   width: 0%;
   transition: 0.3s;
+  text-decoration: none;
+
 }
 
 .progress-step {
@@ -77,11 +83,15 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+
 }
 
 .progress-step::before {
   counter-increment: step;
   content: counter(step);
+  text-decoration: none;
+  color:black;
 }
 
 .progress-step::after {
@@ -90,11 +100,14 @@ input {
   top: calc(100% + 0.5rem);
   font-size: 0.85rem;
   color: #666;
+  text-decoration: none;
+  color:white;
 }
 
 .progress-step-active {
   background-color: var(--primary-color);
   color: #f3f3f3;
+  text-decoration: none;
 }
 
 /* Form */
@@ -149,15 +162,60 @@ input {
 }
 
 .btn {
-  padding: 0.75rem;
+  padding: 0.50rem;
   display: inline-block;
   text-decoration: none;
   background-color: var(--primary-color);
   color: #ffffff;
   text-align: center;
-  border-radius: 100px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
+  border: none;
+}
+
+.btn:hover {
+  border-color:transparent;
+}
+
+/*Fix primary button colors */
+.btn btn-primary {
+  outline:none;
+  background-color: transparent;
+  color: black;
+  border-radius:10px;
+}
+
+.btn-primary:hover {
+  color:white;
+  background-color:rgb(241, 209, 119);
+}
+
+.btn-outline-success {
+  background-color: #333;
+  outline:none;
+}
+
+
+.btn outline-dark {
+  color:#333;
+  outline:none;
+  transition: 2ms;
+}
+
+.btn outline-dark:hover {
+  background-color: rgb(240, 198, 83);
+  transform: scale(1.05);
+}
+
+.btn-outline-secondary {
+  color:black;
+  background-color: rgb(221, 221, 221);;  
+  outline-color:rgb(240, 198, 83);
+}
+
+.btn-outline-dark {
+  outline:none;
 }
 
 /* .tags-group {
@@ -167,6 +225,9 @@ input {
 .tags {
   background-color: #ffffff;
   color: var(--primary-color);
+  outline:solid;
+  outline-color: var(--primary-color);
+  margin:5px;
 }
 
 .tags:hover {
@@ -174,10 +235,67 @@ input {
   color: #ffffff;
 }
 
-.btn:hover {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+.btn :hover {
+ /** box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);**/
+  background-color: var(--primary-color);
 }
 
 .search-btn {
-  width: 5rem;
+  width: 3rem;
+}
+
+
+/* Accordion styling
+*/
+
+.accordion-item {
+  background-color: rgb(246, 238, 218);
+}
+
+/*Fix navbar btn color */
+nav .btn-primary {
+  color:white;
+  border-color:var(--primary-color);
+}
+nav .btn-primary:active {
+  background-color: var(--primary-color);
+}
+nav .btn-outline-success {
+  outline:var(--primary-color);
+  background-color:transparent;
+}
+
+
+
+/*duo login button*/
+.mb-4 btn-outline-success {
+  outline:#333;
+  background-color: white;
+  color:black;
+}
+.btn-outline-success:hover {
+  background-color: var(--primary-color);
+  color:white;
+}
+.btn-outline-warning:hover {
+  background-color: var(--primary-color);
+  color:white;
+}
+/*acceptance letter upload*/
+.mb-4 btn-outline-warning {
+  background-color: white;
+  outline:#333;
+  color:black;
+}
+
+
+.text-gold {
+  color:var(--primary-color);
+  font-style:bold;
+}
+
+/* Cards */
+
+.text-sm {
+  color:#666;
 }
