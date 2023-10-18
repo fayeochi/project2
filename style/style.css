@@ -1,5 +1,5 @@
 :root {
-  --primary-color: rgb(218, 173, 52);
+  --primary-color: rgb(217, 172, 48);
 }
 
 *,
@@ -99,8 +99,8 @@ input {
 
 /* Form */
 .form {
-  width: clamp(320px, 30%, 430px);
-  margin: 0 auto;
+  /* width: clamp(320px, 30%, 430px); */
+  margin: 0.35rem auto;
   border: 1px solid #ccc;
   border-radius: 0.35rem;
   padding: 1.5rem;
@@ -120,6 +120,15 @@ input {
   margin: 2rem 0;
 }
 
+.form-outline {
+  width: fit-content;
+}
+
+.form-control {
+  width: 12rem;
+  border-radius: 100px;
+}
+
 @keyframes animate {
   from {
     transform: scale(1, 0);
@@ -136,21 +145,39 @@ input {
 .btns-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .btn {
   padding: 0.75rem;
-  display: block;
+  display: inline-block;
   text-decoration: none;
   background-color: var(--primary-color);
-  color: #f3f3f3;
+  color: #ffffff;
   text-align: center;
-  border-radius: 0.25rem;
+  border-radius: 100px;
   cursor: pointer;
   transition: 0.3s;
 }
 
+/* .tags-group {
+  align-items: start;
+} */
+
+.tags {
+  background-color: #ffffff;
+  color: var(--primary-color);
+}
+
+.tags:hover {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
 .btn:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+}
+
+.search-btn {
+  width: 5rem;
 }
